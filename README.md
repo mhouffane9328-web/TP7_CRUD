@@ -178,7 +178,7 @@ Description : Formation devstack
 
 
 Pour confirmer définitivement que l'ajout est bien enregistré, nous avons vérifié directement dans la base de données via phpMyAdmin.
-<img width="237" height="237" alt="image" src="https://github.com/user-attachments/assets/f60c9fe5-3f91-4324-bf2e-adc308d94db4" />
+<img width="562" height="306" alt="image" src="https://github.com/user-attachments/assets/c969c5e7-b305-49b8-aa33-a6e736265935" />
 
 
 
@@ -187,13 +187,13 @@ Pour confirmer définitivement que l'ajout est bien enregistré, nous avons vér
 Pour prouver que la modification fonctionne réellement, nous avons testé la modification d'une formation existante.
 Nous avons cliqué sur le bouton *Modifier* de la formation `houffane`. Le formulaire de modification s'affiche avec les anciennes données déjà remplies automatiquement, ce qui prouve que la récupération des données avec `SELECT` fonctionne correctement.
 
-<img width="648" height="343" alt="image" src="https://github.com/user-attachments/assets/bc681e4c-0ec9-45a2-98d7-82a958a62954" />
-
+<img width="237" height="237" alt="image" src="https://github.com/user-attachments/assets/f60c9fe5-3f91-4324-bf2e-adc308d94db4" />
 
 
 Pour confirmer définitivement que la modification est bien enregistrée, nous avons vérifié directement dans la base de données via phpMyAdmin.
 
-<img width="237" height="237" alt="image" src="https://github.com/user-attachments/assets/f60c9fe5-3f91-4324-bf2e-adc308d94db4" />
+<img width="648" height="343" alt="image" src="https://github.com/user-attachments/assets/bc681e4c-0ec9-45a2-98d7-82a958a62954" />
+
 
 
 
