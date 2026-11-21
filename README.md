@@ -1,6 +1,8 @@
 # TP7 - CRUD
 ## Centre de Formation - Gestion des Étudiants, Formations et Modules
-
+*Réalisé par : Marwa Houffane*
+*Filière : LST DWFS et DevOps - Groupe : 2*
+*Module : Développement Web Full-Stack*
 
 ## 1. Présentation du Projet
 
@@ -161,7 +163,34 @@ On voit l'étudiant Houffane, avec son email, et le bouton + Ajouter Etudiant.
 On voit le module PHP lié à la formation 1, et le bouton + Ajouter Module.
 <img width="802" height="293" alt="image" src="https://github.com/user-attachments/assets/c42cb3a2-6c97-4fb7-86e0-d8fe9598120e" />
 
+### 8.5 Preuve d'Ajout
 
+Pour prouver que l'ajout fonctionne réellement, nous avons testé l'ajout d'une nouvelle formation.Nous avons cliqué sur le bouton Ajouter une formation. Le formulaire d'ajout s'affiche vide, avec les champs Nom, Durée et Description à remplir.Nous avons rempli le formulaire avec les informations suivantes : 
+Nom : houffan
+Durée : 1 ans 
+Description : Formation devstack
+
+<img width="222" height="237" alt="image" src="https://github.com/user-attachments/assets/f32213ba-82a8-4c66-9bfe-a33751b253c8" />
+
+
+Pour confirmer définitivement que l'ajout est bien enregistré, nous avons vérifié directement dans la base de données via phpMyAdmin.
+<img width="237" height="237" alt="image" src="https://github.com/user-attachments/assets/f60c9fe5-3f91-4324-bf2e-adc308d94db4" />
+
+
+### 8.6 Preuve de Modification
+
+Pour prouver que la modification fonctionne réellement, nous avons testé la modification d'une formation existante.
+Nous avons cliqué sur le bouton *Modifier* de la formation `houffane`. Le formulaire de modification s'affiche avec les anciennes données déjà remplies automatiquement, ce qui prouve que la récupération des données avec `SELECT` fonctionne correctement.
+
+<img width="648" height="343" alt="image" src="https://github.com/user-attachments/assets/bc681e4c-0ec9-45a2-98d7-82a958a62954" />
+
+
+Pour confirmer définitivement que la modification est bien enregistrée, nous avons vérifié directement dans la base de données via phpMyAdmin.
+<img width="237" height="237" alt="image" src="https://github.com/user-attachments/assets/f60c9fe5-3f91-4324-bf2e-adc308d94db4" />
+
+### 8.7 Preuve de Suppression
+
+Pour prouver que la suppression fonctionne réellement, nous avons testé la suppression d'une formation existante.Nous avons affiché la liste des formations. Nous avons repéré la ligne houffan Modifié - 2 ans - Formation devstack et nous avons cliqué sur le bouton Supprimer qui se trouve à côté.Un message de confirmation s'affiche pour demander si nous voulons vraiment supprimer cette formation.
 
 ## 9. Conclusion
 
