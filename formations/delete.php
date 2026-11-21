@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 require_once "../database/connexion.php";
 
@@ -10,3 +11,6 @@ $stmt->execute();
 header("Location: index.php");
 exit;
 ?>
+=======
+<?php require_once "../database/connexion.php"; $pdo->prepare("DELETE FROM formations WHERE id_formation=?")->execute([$_GET['id']]); header("Location:index.php");
+>>>>>>> 7ced98b589590697d2914e67581b877138c5d773
