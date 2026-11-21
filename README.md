@@ -200,11 +200,15 @@ Pour confirmer définitivement que la modification est bien enregistrée, nous a
 ### 8.7 Preuve de Suppression
 
 Pour prouver que la suppression fonctionne réellement, nous avons testé la suppression d'une formation existante.Nous avons affiché la liste des formations. Nous avons repéré la ligne houffan Modifié - 2 ans - Formation devstack et nous avons cliqué sur le bouton Supprimer qui se trouve à côté.
+
+
 <img width="810" height="259" alt="image" src="https://github.com/user-attachments/assets/005c31ca-278f-4606-9445-b24c5f58f8b7" />
 
 
 Nous avons testé la suppression de la formation houffan.
 Après avoir cliqué sur Supprimer, la formation houffan n'apparaît plus dans la liste. Dans phpMyAdmin, la ligne houffan n'existe plus, il ne reste que les formations marwa. Cela prouve que la requête DELETE FROM formations WHERE id_formation = ? a fonctionné.
+
+
 <img width="568" height="331" alt="image" src="https://github.com/user-attachments/assets/6bf77d57-0aac-48ed-aae4-2b04905617d5" />
 
 
