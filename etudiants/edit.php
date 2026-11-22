@@ -29,7 +29,3 @@ if(!$e){
   Email: <input type="email" name="email" value="<?= $e['email'] ?>"><br><br>
   <button name="modifier">Modifier</button>
 </form>
-<?php require_once "../database/connexion.php"; $id=$_GET['id']; $forms=$pdo->query("SELECT * FROM formations")->fetchAll(); $q=$pdo->prepare("SELECT * FROM etudiants WHERE id_etudiant=?"); $q->execute([$id]); $d=$q->fetch();
-if($_POST){ $pdo->prepare("UPDATE etudiants SET nom=?, email=?, id_formation=? WHERE id_etudiant=?")->execute([$_POST['nom'],$_POST['email'],$_POST['form']?:NULL,$id]); header("Location:index.php"); exit; }
-?>
-<form method="post"><h2>Modifier Étudiant</h2>Nom: <input name="nom" value="<?=$d['nom']?>"><br><br>Email: <input name="email" value="<?=$d['email']?>"><br><br>Formation: <select name="form"><option value="">-- Choisir --</option><?php foreach($forms as $f): ?><option value="<?=$f['id_formation']?>" <?=$f['id_formation']==$d['id_formation']?'selected':''?>><?=$f['nom_formation']?></option><?php endforeach; ?></select><br><br><button>Modifier</button></form>
