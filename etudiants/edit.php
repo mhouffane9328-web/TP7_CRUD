@@ -1,10 +1,8 @@
 <?php
 require_once "../database/connexion.php";
 
-// 1. Jib l ID, 7it mli kat-sifet formulaire kay-weli POST machi GET
 $id = isset($_GET['id']) ? $_GET['id'] : $_POST['id'];
 
-// 2. Ila clickiti 3la Modifier, bedel f base
 if(isset($_POST['modifier'])){
     $stmt = $conn->prepare("UPDATE etudiants SET nom=?, prenom=?, email=? WHERE id_etudiant=?");
     $stmt->bind_param("sssi", $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['id']);
@@ -13,7 +11,6 @@ if(isset($_POST['modifier'])){
     exit;
 }
 
-// 3. Jib les infos l 9dam bach y-banou f formulaire
 $stmt = $conn->prepare("SELECT * FROM etudiants WHERE id_etudiant = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();

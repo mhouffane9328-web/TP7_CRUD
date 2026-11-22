@@ -2,7 +2,6 @@
 if(isset($_POST['add'])){
  $nom = $_POST['nom_module'];
  $id_f = $_POST['id_formation'];
- // Kan-jareb 2 smiyat mokhtalfa bach ykhdem 3and ga3
  $sql = "INSERT INTO modules (nom_module, id_formation) VALUES ('$nom', '$id_f')";
  if(!$conn->query($sql)){
     $sql = "INSERT INTO modules (nom, id_formation) VALUES ('$nom', '$id_f')";
@@ -31,7 +30,6 @@ while($r=$res->fetch_assoc()){
 if(isset($_POST['add'])){
  $nom = $_POST['nom_module'];
  $id_f = $_POST['id_formation'];
- // Kan-jareb 2 smiyat mokhtalfa bach ykhdem 3and ga3
  $sql = "INSERT INTO modules (nom_module, id_formation) VALUES ('$nom', '$id_f')";
  if(!$conn->query($sql)){
     $sql = "INSERT INTO modules (nom, id_formation) VALUES ('$nom', '$id_f')";
