@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php include "../database/db.php"; ?>
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Modules</title>
@@ -21,7 +20,6 @@ while($r=$res->fetch_assoc()){
 ?>
 </table>
 </div>
-=======
 <?php include "../database/db.php"; ?>
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Modules</title>
@@ -44,5 +42,4 @@ while($r=$res->fetch_assoc()){
 ?>
 </table>
 </div>
->>>>>>> 7ced98b589590697d2914e67581b877138c5d773
 </body></html>

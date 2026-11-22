@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 require_once "../database/connexion.php";
 $id = $_GET['id'];
@@ -23,9 +22,7 @@ Durée: <input name="duree" value="<?=$d['duree']?>"><br><br>
 Description: <textarea name="desc"><?=$d['description']?></textarea><br><br>
 <button>Modifier</button>
 </form>
-=======
 <?php require_once "../database/connexion.php"; $id=$_GET['id']; $q=$pdo->prepare("SELECT * FROM formations WHERE id_formation=?"); $q->execute([$id]); $d=$q->fetch();
 if($_POST){ $pdo->prepare("UPDATE formations SET nom_formation=?, duree=?, description=? WHERE id_formation=?")->execute([$_POST['nom'],$_POST['duree'],$_POST['desc'],$id]); header("Location:index.php"); exit; }
 ?>
 <form method="post"><h2>Modifier</h2>Nom: <input name="nom" value="<?=$d['nom_formation']?>"><br><br>Durée: <input name="duree" value="<?=$d['duree']?>"><br><br>Description: <textarea name="desc"><?=$d['description']?></textarea><br><br><button>Modifier</button></form>
->>>>>>> 7ced98b589590697d2914e67581b877138c5d773

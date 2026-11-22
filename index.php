@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +29,6 @@
 </div>
 </body>
 </html>
-=======
 <?php include "../database/db.php"; ?>
 <!DOCTYPE html>
 <html><head><meta charset="utf-8"><title>Etudiants</title>
@@ -54,4 +52,3 @@ while($r=$res->fetch_assoc()){
 </table>
 </div>
 </body></html>
->>>>>>> 7ced98b589590697d2914e67581b877138c5d773

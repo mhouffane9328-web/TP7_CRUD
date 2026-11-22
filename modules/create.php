@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php include "../database/db.php";
 if(isset($_POST['add'])){
  $nom = $_POST['nom_module'];
@@ -28,7 +27,6 @@ while($r=$res->fetch_assoc()){
 </select><br><br>
 <button name="add">Ajouter</button>
 </form>
-=======
 <?php include "../database/db.php";
 if(isset($_POST['add'])){
  $nom = $_POST['nom_module'];
@@ -58,5 +56,4 @@ while($r=$res->fetch_assoc()){
 </select><br><br>
 <button name="add">Ajouter</button>
 </form>
->>>>>>> 7ced98b589590697d2914e67581b877138c5d773
 <a href="index.php">Retour</a>
